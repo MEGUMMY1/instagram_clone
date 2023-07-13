@@ -1,6 +1,4 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-flex;
     height: 100vh;
 }

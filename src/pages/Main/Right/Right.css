@@ -1,0 +1,51 @@
+.RightContainer{
+    width: 319px;
+    height: 100vh;
+}
+
+.MyProfile{
+    width: 319px;
+    height: 56px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.MyProfile-img{
+    width: 62px;
+    height: 56px;    
+    align-items: center;
+    display: flex;
+}
+
+.MyProfile-txt{    
+    width: 221px;
+    height: 36px;
+}
+
+.MyProfile-txt-id{    
+    width: fit-content;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 12px;
+    margin: 0;
+}
+
+.MyProfile-txt-name{    
+    width: fit-content;
+    height: 18px;    
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(15,15,15);
+    padding-left: 12px;
+    margin: 0;
+}
+
+img{
+    width: 55px;
+    height: 55px;
+}
