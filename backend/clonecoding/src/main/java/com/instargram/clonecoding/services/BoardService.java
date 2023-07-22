@@ -34,6 +34,7 @@ public class BoardService {
         Board board = new Board();
         board.setUser(requestDto.getUser());
         board.setContent(requestDto.getContent());
+        board.setImage(requestDto.getImage());
         board.setPostDate(LocalDateTime.now());
         return boardRepository.save(board);
     }
