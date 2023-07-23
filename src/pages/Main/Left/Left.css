@@ -1,13 +1,14 @@
 .LeftContainer{
-    width: 244px;
-    height: 100vh;
-    margin: 0px;
-    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 245px;
+    height: 100%;
+    margin: 10px 0 0 10px;
 }
 
 .Container-box{
-    width: 220px;
-    background-color: rgb(255,255,255);
+    width: 245px;
     padding: 0px 12px 5px 12px;
 }
 

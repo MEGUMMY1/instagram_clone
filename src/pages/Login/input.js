@@ -4,7 +4,7 @@ import './Login.css';
 const Input = ({ type, value, onChange, placeholder }) => {
   return (
     <div>
-        <input
+        <input className="comment"
             type={type}
             value={value}
             onChange={onChange}

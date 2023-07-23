@@ -1,6 +1,9 @@
 .RightContainer{
     width: 319px;
     height: 100vh;
+    position: fixed;
+    right: 15px;
+    margin-top: 10px;
 }
 
 .MyProfile{
@@ -45,7 +48,10 @@
     margin: 0;
 }
 
-img{
-    width: 55px;
-    height: 55px;
+.profile{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #bebebe;
+    margin-left: 20px;
 }

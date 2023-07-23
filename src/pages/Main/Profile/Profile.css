@@ -1,0 +1,52 @@
+.ProfileContainer{
+    width: 630px;
+    height: 100vh;
+    margin-top: 15px;
+    overflow-y: auto hidden;
+}
+
+.profile-header{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid #bebebe;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column; 
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin: 5px 15px;
+}
+
+.profile-bio {
+    margin: 0 15px;
+    font-size: 15px;    
+    color: gray;
+}
+
+.profile-stats {
+    font-size: 14px;
+    margin: 35px 0 0 15px;
+    width: 350px;
+}
+
+.profile-txt{
+    font-size: 16px;
+    color: black;
+}
+
+.profile-footer{
+    height: 40px;
+}
