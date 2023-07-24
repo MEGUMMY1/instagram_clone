@@ -17,6 +17,7 @@ function Write({ onPostSubmit }) {
     if (newPost.username && newPost.caption) {
       onPostSubmit(newPost);
       setNewPost({ username: '', caption: '' });
+      window.location.href = '/';
     }
   };
 

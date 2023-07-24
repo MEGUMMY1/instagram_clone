@@ -28,15 +28,14 @@ function App() {
       comments: [],
     };
     setPosts([...posts, updatedPost]);
-    setCurrentScreen('Body'); // 작성 후 Body 화면으로 전환
   };
 
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Body />} />
+        <Route path='/' element={<Body posts={posts} />} />
         <Route path='/search' element={<Search />} />
-        <Route path='/write' element={<Write onPostSubmit={handlePostSubmit}/>} />
+        <Route path='/write' element={<Write onPostSubmit={handlePostSubmit} />} />      
         <Route path='/profile' element={<Profile />} />
       </Routes>
     </Router>

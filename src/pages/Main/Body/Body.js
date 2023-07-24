@@ -10,16 +10,19 @@ function calculateTimeDifference(uploadDate) {
     const hoursDifference = Math.floor(timeDifference / (1000 * 60 * 60));
     const minutesDifference = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
   
-    if (hoursDifference >= 1) {
+    if (hoursDifference >= 24) {
+        const daysDifference = Math.floor(hoursDifference / 24);
+        return `${daysDifference}일 전`;
+    } else if (hoursDifference >= 1) {
         return `${hoursDifference}시간 전`;
-    } else if (hoursDifference == 0){
+    } else if (hoursDifference == 0) {
         return `방금 전`;
     } else {
         return `${minutesDifference}분 전`;
     }
-}
+  }
 
-function Body(){
+function Body({posts}){
     const [postList, setPostList] = useState(posts);
     const [commentAuthor, setCommentAuthor] = useState(''); // 댓글 작성자 DB연결 후 삭제 要
     const commentInputRefs = useRef({}); // 댓글 작성 아이콘 클릭 시 input으로 커서 이동
