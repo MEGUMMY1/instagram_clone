@@ -6,6 +6,10 @@
     align-items: center;
     flex-direction: column;
     margin-top: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
 }
 
 .write-form{

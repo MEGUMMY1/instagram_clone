@@ -1,9 +1,14 @@
 .RightContainer{
     width: 319px;
-    height: 100vh;
-    position: fixed;
-    right: 15px;
+    height: 100Vh;
     margin-top: 10px;
+    position: fixed;
+    top: 0;
+    right: 100px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
 }
 
 .MyProfile{
@@ -18,10 +23,11 @@
 }
 
 .MyProfile-img{
-    width: 62px;
-    height: 56px;    
+    width: 65px;
+    height: 65px;    
     align-items: center;
     display: flex;
+    margin: 0 20px;
 }
 
 .MyProfile-txt{    

@@ -7,9 +7,6 @@
     flex-direction: column;
     margin-top: 15px;
     overflow-y: auto hidden;
-    /*display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;*/
 }
 
 .post-div{

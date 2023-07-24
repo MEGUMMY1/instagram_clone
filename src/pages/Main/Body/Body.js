@@ -1,6 +1,8 @@
+import Left from "../Left/Left";
 import "./Body.css"
 import posts from './Posts';
 import React,{ useState, useRef } from "react";
+import Right from "../Right/Right";
 
 function calculateTimeDifference(uploadDate) {
     const currentTime = new Date();
@@ -51,6 +53,8 @@ function Body(){
     };
 
     return(
+        <>
+        <Left />
         <div className="BodyContainer">
             {postList.map((post) => (
                     <div key={post.id} className="post-div">
@@ -108,6 +112,8 @@ function Body(){
                     </div>
             ))}
         </div>
+        <Right/>
+    </>
     )
 }
 

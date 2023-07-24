@@ -8,15 +8,10 @@ import Right from './pages/Main/Right/Right';
 import Search from './pages/Main/Search/Search';
 import Profile from './pages/Main/Profile/Profile';
 import Write from './pages/Main/Write/Write';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
-  const [currentScreen, setCurrentScreen] = useState('Body'); // 기본은 Body.js
-
-  const handleMenuButtonClick = (screen) => {
-    setCurrentScreen(screen);
-  };
-
   const [posts, setPosts] = useState(Posts);
 
   const handlePostSubmit = (newPost) => {
@@ -37,14 +32,14 @@ function App() {
   };
 
   return (
-    <div className='AppContainer'>
-      <Left onMenuButtonClick={handleMenuButtonClick} />
-      {currentScreen === 'Body' && <Body />}
-      {currentScreen === 'Search' && <Search />}
-      {currentScreen === 'Profile' && <Profile />}
-      {currentScreen === 'Write' && <Write onPostSubmit={handlePostSubmit} />}
-      <Right onMenuButtonClick={handleMenuButtonClick}/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Body />} />
+        <Route path='/search' element={<Search />} />
+        <Route path='/write' element={<Write onPostSubmit={handlePostSubmit}/>} />
+        <Route path='/profile' element={<Profile />} />
+      </Routes>
+    </Router>
   );
 }
 
