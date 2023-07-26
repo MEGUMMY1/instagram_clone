@@ -32,8 +32,7 @@ public class UserService {
 
         User user = userFound.get();
         user.setToken(token);
-
-
+        userRepository.save(user);
         return true;
     }
 
