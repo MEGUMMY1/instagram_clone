@@ -11,6 +11,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
+@CrossOrigin(originPatterns = "http://localhost:3000")
 @RequestMapping("/board")
 public class BoardController {
     private final BoardService boardService;

@@ -3,6 +3,7 @@ package com.instargram.clonecoding.controllers;
 import com.instargram.clonecoding.entity.User;
 import com.instargram.clonecoding.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.security.Principal;
 import java.util.List;
 
+@CrossOrigin(originPatterns = "http://localhost:3000")
 @RestController
 @RequestMapping("/home")
 public class HomeController {
