@@ -15,7 +15,7 @@ function Login(){
     
         try {
           const response = await axios.post('API_ENDPOINT_URL/login', {
-            id,
+            userid,
             password,
           });
     
@@ -23,7 +23,7 @@ function Login(){
           console.log(response.data); // 백엔드에서 보내준 응답 데이터
     
           // 입력 데이터 초기화
-          resetID();
+          resetUserid();
           resetPassword();
     
           // 로그인 성공 후 처리 (예: 토큰 저장, 홈페이지로 이동 등)
