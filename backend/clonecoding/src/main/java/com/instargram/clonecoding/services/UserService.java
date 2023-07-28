@@ -31,7 +31,9 @@ public class UserService {
         if(userFound.isEmpty()) return false;
 
         User user = userFound.get();
+
         user.setToken(token);
+        userRepository.save(user);
 
 
         return true;
