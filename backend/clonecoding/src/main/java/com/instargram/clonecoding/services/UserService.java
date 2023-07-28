@@ -34,8 +34,11 @@ public class UserService {
 
         user.setToken(token);
         userRepository.save(user);
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 14387c8c8df153efce77e2f2a3e8d4901034d580
         return true;
     }
 
