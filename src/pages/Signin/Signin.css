@@ -84,17 +84,12 @@ h2{
 }
 
 .bar{
-    margin-top: 0;
-    margin-bottom: 0;
-    border-left: 0;
     box-sizing: border-box;
     display: flex;
     padding-right: 0;
-    margin-left: 30px;
+    padding-left: 30px;
     font-weight: 600;
     color: #8E8E8E;
-    font-size: .8125rem;
-    text-align: center;
 }
 
 .div-inputbox{

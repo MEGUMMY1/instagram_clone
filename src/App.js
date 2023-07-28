@@ -34,6 +34,8 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Body posts={posts} />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signin' element={<Signin />} />
         <Route path='/search' element={<Search />} />
         <Route path='/write' element={<Write onPostSubmit={handlePostSubmit} />} />      
         <Route path='/profile' element={<Profile />} />

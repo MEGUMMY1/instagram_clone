@@ -3,6 +3,7 @@ import "./Body.css"
 import posts from './Posts';
 import React,{ useState, useRef } from "react";
 import Right from "../Right/Right";
+import { useNavigate } from "react-router-dom";
 
 function calculateTimeDifference(uploadDate) {
     const currentTime = new Date();
@@ -54,11 +55,15 @@ function Body({posts}){
           inputRef.focus(); // 해당 게시글의 댓글 작성 input으로 포커스 이동
         }
     };
+    
+    const navigate = useNavigate();
 
     return(
         <>
         <Left />
         <div className="BodyContainer">
+            <button onClick={() => navigate("/login")}>Login</button>
+            <button onClick={() => navigate("/signin")}>Signin</button>
             {postList.map((post) => (
                     <div key={post.id} className="post-div">
                         <div className="post-top">

@@ -1,21 +1,35 @@
 import "./Signin.css"
+import React, { useState } from 'react';
+import axios from 'axios';
 import Input from "./input";
 import useInput from "./useInput";
 
 function Signin(){
-    const [email, setEmail, resetEmail] = useInput("");
-    const [name, setName, resetName] = useInput("");
-    const [id, setID, resetID] = useInput("");
+    // const [email, setEmail, resetEmail] = useInput("");
+    // const [name, setName, resetName] = useInput("");
+    const [userid, setUserid, resetUserid] = useInput("");
     const [password, setPassword, resetPassword] = useInput("");
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        resetEmail();
-        resetName();
-        resetID();
-        resetPassword();
-    };
-
+    
+        try {
+          const response = await axios.post('http://15.164.215.251:8080/user/signin', {
+            userid,
+            password,
+          });
+    
+          // 요청이 성공적으로 완료되었을 때의 처리
+          console.log(response.data); // 백엔드에서 보내준 응답 데이터
+    
+          // 입력 데이터 초기화
+          resetUserid();
+          resetPassword();
+        } catch (error) {
+          // 요청이 실패했을 때의 처리
+          console.error('API 요청 실패:', error);
+        }
+      };
     return(
         <div className="Container">
             <div className="logo"/>
@@ -29,7 +43,7 @@ function Signin(){
                         </div>
                     </div>
                     <div className="form-div">
-                        <div className="div-inputbox">
+                        {/* <div className="div-inputbox">
                             <label>
                                 <Input type="text" value={email} onChange={setEmail} placeholder="휴대폰 번호 또는 이메일 주소" autoCapitalize="off" autoComplete="tel"/>
                             </label>
@@ -38,10 +52,10 @@ function Signin(){
                             <label>
                                 <Input type="text" value={name} onChange={setName} placeholder="성명"/>
                             </label>
-                        </div>
+                        </div> */}
                         <div className="div-inputbox">
                             <label>
-                                <Input type="text" value={id} onChange={setID} placeholder="사용자 이름"/>
+                                <Input type="text" value={userid} onChange={setUserid} placeholder="사용자 이름"/>
                             </label>
                         </div>
                         <div className="div-inputbox">
