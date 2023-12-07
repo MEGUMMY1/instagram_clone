@@ -15,3 +15,13 @@ https://www.instagram.com/
     - 게사물 좋아요
     - 게시물 검색
     - 스토리, DM등 부가 기능은 구현 필요 X
+
+![image](https://github.com/MEGUMMY1/instagram_clone/assets/57613101/a97f7aac-50ae-486e-9c70-a447fd89a969)
+![image](https://github.com/MEGUMMY1/instagram_clone/assets/57613101/b11fe9cb-f72c-4cf3-8e88-1927e05fc271)
+![image](https://github.com/MEGUMMY1/instagram_clone/assets/57613101/d4ef29ea-7c35-4a5a-90f6-4114ca4079f0)
+![image](https://github.com/MEGUMMY1/instagram_clone/assets/57613101/43afaeb6-0d50-4243-8291-d53aa11e91f1)
+![image](https://github.com/MEGUMMY1/instagram_clone/assets/57613101/2dceccca-6565-4cd2-9f34-d9e68886efd6)
+![image](https://github.com/MEGUMMY1/instagram_clone/assets/57613101/2b6ae986-18b6-41a1-8fd1-4c54b7f77341)
+
+
+
